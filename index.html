@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>享受創意整合行銷 </title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <!-- 導覽 -->
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="nav-logo">
+          <a href="#">
+            <img src="src/imports/logo.png" alt="享受創意整合行銷 Logo" />
+          </a>
+        </div>
+        <nav class="nav-links nav-menu-desktop" aria-label="主要導覽">
+          <a href="#services">服務項目</a>
+          <a href="#advantages">關於我們</a>
+          <a href="#partners">合作品牌</a>
+          <a href="#cases">案例分享</a>
+          <a href="#">知識分享</a>
+          <a href="#contact">聯絡我們</a>
+        </nav>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="開啟選單"
+        >
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+          <svg id="icon-close" hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="手機選單">
+        <div class="mobile-menu-inner">
+          <a href="#services">服務項目</a>
+          <a href="#advantages">關於我們</a>
+          <a href="#partners">合作品牌</a>
+          <a href="#cases">案例分享</a>
+          <a href="#">知識分享</a>
+          <a href="#contact">聯絡我們</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" aria-label="主視覺">
+        <div class="hero-bg">
+          <img src="src/imports/1-電腦1600x640-01-300x120.jpg" alt="" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="white">享受<span class="gold">創意</span>整合行銷</span>
+          </h1>
+          <p class="hero-subtitle">ENJOY INTEGRATED MARKETING</p>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">
+          <div class="scroll-hint-track">
+            <span class="scroll-hint-dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 服務項目 -->
+      <section id="services" class="section" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title" class="section-title" data-animate="fade-up">
+            服務<span class="gold">項目</span>
+          </h2>
+
+          <article class="service-row" data-animate="fade-left" data-delay="0.1">
+            <div class="service-visual">
+              <img src="src/imports/廣告投放.png" alt="廣告投放" />
+              <span class="service-badge">01</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.3">廣告投放</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.5"></div>
+              <p data-animate="fade-up" data-delay="0.4">專業的廣告投放服務，為您的品牌創造最大價值，提升市場競爭力與品牌影響力。</p>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" data-animate="fade-right" data-delay="0.2">
+            <div class="service-visual">
+              <img src="src/imports/社群.png" alt="社群經營" />
+              <span class="service-badge">02</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.4">社群經營</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.6"></div>
+              <p data-animate="fade-up" data-delay="0.5">專業的社群經營服務，為您的品牌創造最大價值，提升市場競爭力與品牌影響力。</p>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row" data-animate="fade-left" data-delay="0.3">
+            <div class="service-visual">
+              <img src="src/imports/品牌企業識別.png" alt="品牌企業識別" />
+              <span class="service-badge">03</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.5">品牌企業識別</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.7"></div>
+              <p data-animate="fade-up" data-delay="0.6">專業的品牌企業識別服務，為您的品牌創造最大價值，提升市場競爭力與品牌影響力。</p>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" data-animate="fade-right" data-delay="0.4">
+            <div class="service-visual">
+              <img src="src/imports/短影音-1.png" alt="短影音" />
+              <span class="service-badge">04</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.6">短影音</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.8"></div>
+              <p data-animate="fade-up" data-delay="0.7">專業的短影音服務，為您的品牌創造最大價值，提升市場競爭力與品牌影響力。</p>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row" data-animate="fade-left" data-delay="0.5">
+            <div class="service-visual">
+              <img src="src/imports/口碑行銷.png" alt="口碑行銷" />
+              <span class="service-badge">05</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.7">口碑行銷</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.9"></div>
+              <p data-animate="fade-up" data-delay="0.8">專業的口碑行銷服務，為您的品牌創造最大價值，提升市場競爭力與品牌影響力。</p>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" data-animate="fade-right" data-delay="0.6">
+            <div class="service-visual">
+              <img src="src/imports/銷售頁-1.png" alt="銷售頁" />
+              <span class="service-badge">06</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.8">銷售頁</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="1"></div>
+              <p data-animate="fade-up" data-delay="0.9">專業的銷售頁服務，為您的品牌創造最大價值，提升市場競爭力與品牌影響力。</p>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 四大優勢 -->
+      <section id="advantages" class="section section--compact-top bg-gradient-section" aria-labelledby="advantages-title">
+        <div class="container">
+          <h2 id="advantages-title" class="section-title" data-animate="fade-up">
+            四大<span class="gold">優勢</span>
+          </h2>
+          <div class="advantage-grid">
+            <article class="advantage-card" data-animate="scale-up" data-delay="0.1">
+              <span class="advantage-num">01</span>
+              <div class="advantage-body">
+                <div class="advantage-img-wrap">
+                  <img src="src/imports/四大優勢-整合行銷一把罩.jpg" alt="整合行銷一把罩" />
+                </div>
+                <div class="advantage-content">
+                  <h3>整合行銷一把罩</h3>
+                  <div class="line"></div>
+                  <p>跨平台整合行銷策略，一站式管理所有社群媒體與數位工具，讓您的品牌無所不在</p>
+                  <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </article>
+            <article class="advantage-card" data-animate="scale-up" data-delay="0.2">
+              <span class="advantage-num">02</span>
+              <div class="advantage-body">
+                <div class="advantage-img-wrap">
+                  <img src="src/imports/四大優勢-實戰經驗超豐富.jpg" alt="實戰經驗超豐富" />
+                </div>
+                <div class="advantage-content">
+                  <h3>實戰經驗超豐富</h3>
+                  <div class="line"></div>
+                  <p>累積多年實戰經驗，服務過各產業客戶，深入了解市場需求，提供最適合的行銷解決方案</p>
+                  <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </article>
+            <article class="advantage-card" data-animate="scale-up" data-delay="0.3">
+              <span class="advantage-num">03</span>
+              <div class="advantage-body">
+                <div class="advantage-img-wrap">
+                  <img src="src/imports/四大優勢-服務內容客製化.jpg" alt="服務內容客製化" />
+                </div>
+                <div class="advantage-content">
+                  <h3>服務內容客製化</h3>
+                  <div class="line"></div>
+                  <p>根據客戶需求量身打造專屬行銷方案，確保每一個項目都能達到最佳效果與投資報酬率</p>
+                  <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </article>
+            <article class="advantage-card" data-animate="scale-up" data-delay="0.4">
+              <span class="advantage-num">04</span>
+              <div class="advantage-body">
+                <div class="advantage-img-wrap">
+                  <img src="src/imports/四大優勢-團隊陣容超堅強.jpg" alt="團隊陣容超堅強" />
+                </div>
+                <div class="advantage-content">
+                  <h3>團隊陣容超堅強</h3>
+                  <div class="line"></div>
+                  <p>由經驗豐富的行銷專家組成，確保每個項目都能順利執行並達成目標</p>
+                  <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="section-divider" data-animate="line-x" data-delay="0.5"></div>
+        </div>
+      </section>
+
+      <!-- 合作品牌 -->
+      <section id="partners" class="section section--compact-top" aria-labelledby="partners-title">
+        <div class="container">
+          <h2 id="partners-title" class="section-title" data-animate="fade-up">
+            合作<span class="gold">品牌</span>
+          </h2>
+          <p class="section-desc" data-animate="fade-up" data-delay="0.2">
+            與眾多知名品牌攜手合作，共同創造卓越成果
+          </p>
+
+          <div class="partner-slider-wrap" data-animate="fade-up" data-delay="0.3">
+            <button type="button" class="slider-btn slider-btn--prev" aria-label="上一張">‹</button>
+            <div class="partner-slider">
+              <div class="partner-track">
+                <div class="partner-slide">
+                  <div class="partner-card"><img src="src/imports/合作品牌demo01.jpeg" alt="合作品牌 1" /></div>
+                </div>
+                <div class="partner-slide">
+                  <div class="partner-card"><img src="src/imports/合作品牌demo02.jpeg" alt="合作品牌 2" /></div>
+                </div>
+                <div class="partner-slide">
+                  <div class="partner-card"><img src="src/imports/合作品牌demo03.jpeg" alt="合作品牌 3" /></div>
+                </div>
+                <div class="partner-slide">
+                  <div class="partner-card"><img src="src/imports/合作品牌demo01.jpeg" alt="合作品牌 4" /></div>
+                </div>
+                <div class="partner-slide">
+                  <div class="partner-card"><img src="src/imports/合作品牌demo02.jpeg" alt="合作品牌 5" /></div>
+                </div>
+                <div class="partner-slide">
+                  <div class="partner-card"><img src="src/imports/合作品牌demo03.jpeg" alt="合作品牌 6" /></div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="slider-btn slider-btn--next" aria-label="下一張">›</button>
+            <div class="slider-dots" role="tablist" aria-label="輪播分頁"></div>
+          </div>
+
+          <div class="section-divider" data-animate="line-x" data-delay="0.3"></div>
+        </div>
+      </section>
+
+      <!-- 案例分享 -->
+      <section id="cases" class="section section--compact-top bg-gradient-section" aria-labelledby="cases-title">
+        <div class="container">
+          <h2 id="cases-title" class="section-title" data-animate="fade-up">
+            案例<span class="gold">分享</span>
+          </h2>
+          <p class="section-desc" data-animate="fade-up" data-delay="0.2">
+            精選成功案例，見證我們為客戶創造的卓越成果
+          </p>
+
+          <div class="case-grid">
+            <article class="case-card" data-animate="scale-up" data-delay="0.1">
+              <div class="case-img-wrap">
+                <img src="src/imports/勇者進化之路-768x512.png" alt="勇者進化之路" />
+                <span class="case-badge">01</span>
+              </div>
+              <div class="case-body">
+                <h3>勇者進化之路</h3>
+                <div class="line"></div>
+                <p>透過創意整合行銷策略，成功打造品牌形象與市場定位</p>
+                <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+            </article>
+            <article class="case-card" data-animate="scale-up" data-delay="0.2">
+              <div class="case-img-wrap">
+                <img src="src/imports/滷味-768x512.png" alt="特色滷味" />
+                <span class="case-badge">02</span>
+              </div>
+              <div class="case-body">
+                <h3>特色滷味</h3>
+                <div class="line"></div>
+                <p>運用數位行銷與口碑策略，成功打造在地美食品牌知名度</p>
+                <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+            </article>
+            <article class="case-card" data-animate="scale-up" data-delay="0.3">
+              <div class="case-img-wrap">
+                <img src="src/imports/NFT-768x512.png" alt="NFT 行銷" />
+                <span class="case-badge">03</span>
+              </div>
+              <div class="case-body">
+                <h3>NFT 行銷</h3>
+                <div class="line"></div>
+                <p>結合社群經營與廣告投放，有效提升產品曝光與銷售轉換</p>
+                <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="btn-center" data-animate="fade-up" data-delay="0.5">
+            <button type="button" class="btn-gold"><span>更多案例</span></button>
+          </div>
+          <div class="section-divider" data-animate="line-x" data-delay="0.4"></div>
+        </div>
+      </section>
+
+      <!-- 聯絡我們 -->
+      <section id="contact" class="section section--compact-top" aria-labelledby="contact-title">
+        <div class="container" style="max-width: 56rem">
+          <h2 id="contact-title" class="section-title" data-animate="fade-up" style="margin-bottom: 2rem">
+            聯繫<span class="gold">我們</span>
+          </h2>
+          <p class="section-desc" data-animate="fade-up" data-delay="0.2" style="margin-top: 0; margin-bottom: 4rem">
+            讓我們一起創造卓越成果
+          </p>
+
+          <div class="contact-box" data-animate="fade-up" data-delay="0.3">
+            <span class="form-glow" aria-hidden="true"></span>
+            <span class="form-glow form-glow--bl" aria-hidden="true"></span>
+            <form id="contact-form" class="contact-form" action="#" method="post">
+              <div class="form-grid">
+                <div class="form-group" data-animate="fade-left" data-delay="0.4">
+                  <label for="name">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    姓名
+                  </label>
+                  <div class="form-input-wrap">
+                    <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required />
+                  </div>
+                </div>
+                <div class="form-group" data-animate="fade-right" data-delay="0.4">
+                  <label for="email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Email
+                  </label>
+                  <div class="form-input-wrap">
+                    <input type="email" id="email" name="email" placeholder="請輸入您的 Email" required />
+                  </div>
+                </div>
+              </div>
+              <div class="form-grid">
+                <div class="form-group" data-animate="fade-left" data-delay="0.5">
+                  <label for="phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    電話號碼
+                  </label>
+                  <div class="form-input-wrap">
+                    <input type="tel" id="phone" name="phone" placeholder="請輸入您的電話號碼" />
+                  </div>
+                </div>
+                <div class="form-group" data-animate="fade-right" data-delay="0.5">
+                  <label for="company">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                    公司名稱
+                  </label>
+                  <div class="form-input-wrap">
+                    <input type="text" id="company" name="company" placeholder="請輸入您的公司名稱" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group" data-animate="fade-up" data-delay="0.6">
+                <label for="message">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  訊息
+                </label>
+                <div class="form-input-wrap">
+                  <textarea id="message" name="message" rows="6" placeholder="請輸入您的訊息內容"></textarea>
+                </div>
+              </div>
+              <div class="btn-center" style="margin-top: 0" data-animate="fade-up" data-delay="0.7">
+                <button type="submit" class="btn-gold"><span>送出訊息</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="section-divider" data-animate="line-x" data-delay="0.5"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container" data-animate="fade-in">
+        <img src="src/imports/logo.png" alt="Logo" />
+        <p>© 2026 All rights reserved. | 享受創意整合行銷</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

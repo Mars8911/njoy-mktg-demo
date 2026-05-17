@@ -1,0 +1,8 @@
+@layer theme {
+  :root {
+    /* Black & Gold Theme Colors */
+    --color-primary: #d4af37;
+    --color-gold-light: #f4e5a1;
+    --color-gold-dark: #c9a959;
+  }
+}
