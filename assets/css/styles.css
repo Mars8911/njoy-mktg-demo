@@ -779,6 +779,151 @@ button {
   transform: scale(1.2);
 }
 
+/* ── 合作品牌跑馬燈 Banner ── */
+.brand-banner {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(246, 177, 17, 0.25);
+  background: linear-gradient(135deg, #18181b, #000);
+}
+
+.brand-banner__left {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2.5rem 2.5rem 2.5rem 3rem;
+  min-width: 16rem;
+}
+
+.brand-banner__title {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.brand-banner__btn {
+  display: inline-block;
+  padding: 0.625rem 1.75rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #000;
+  background: var(--gold);
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+}
+
+.brand-banner__btn:hover {
+  background: #ffc63d;
+  box-shadow: 0 0 30px rgba(246, 177, 17, 0.45);
+  transform: translateY(-2px);
+}
+
+.brand-banner__marquee {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 1.75rem 0;
+  background: linear-gradient(135deg, rgba(246, 177, 17, 0.12), rgba(246, 177, 17, 0.03));
+}
+
+/* 兩側淡出遮罩 */
+.brand-banner__marquee::before,
+.brand-banner__marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brand-banner__marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.brand-banner__marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.brand-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-inline: 1.5rem;
+  width: max-content;
+  animation: brand-marquee 28s linear infinite;
+}
+
+.brand-banner__marquee:hover .brand-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes brand-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.brand-logo {
+  flex: 0 0 auto;
+  width: 8.5rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand-logo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(246, 177, 17, 0.35);
+}
+
+.brand-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-marquee-track { animation: none; }
+}
+
+@media (max-width: 768px) {
+  .brand-banner {
+    flex-direction: column;
+  }
+  .brand-banner__left {
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem 1.5rem;
+    min-width: 0;
+  }
+  .brand-banner__marquee {
+    padding: 1.25rem 0;
+  }
+  .brand-logo {
+    width: 7rem;
+    height: 5rem;
+  }
+}
+
 /* ── 案例 ── */
 .case-grid {
   display: grid;
