@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>知識分享 — 享受創意整合行銷</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <!-- 導覽 -->
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="src/imports/logo.png" alt="享受創意整合行銷 Logo" />
+          </a>
+        </div>
+        <nav class="nav-links nav-menu-desktop" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="services.html">服務項目</a>
+          <a href="about.html">關於我們</a>
+          <a href="clients.html">合作品牌</a>
+          <a href="portfolio.html">案例分享</a>
+          <a href="blog.html" class="is-active">知識分享</a>
+          <a href="contact.html">聯絡我們</a>
+        </nav>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="開啟選單"
+        >
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+          <svg id="icon-close" hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="手機選單">
+        <div class="mobile-menu-inner">
+          <a href="index.html">首頁</a>
+          <a href="services.html">服務項目</a>
+          <a href="about.html">關於我們</a>
+          <a href="clients.html">合作品牌</a>
+          <a href="portfolio.html">案例分享</a>
+          <a href="blog.html" class="is-active">知識分享</a>
+          <a href="contact.html">聯絡我們</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero" aria-label="知識分享主視覺">
+        <div class="hero-bg">
+          <img src="src/imports/1-電腦1600x640-01-300x120.jpg" alt="" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
+        <div class="page-hero-content">
+          <p class="breadcrumb"><a href="index.html">‹ 返回首頁</a></p>
+          <h1 class="page-hero-title">
+            知識<span class="gold">分享</span>
+          </h1>
+          <p class="page-hero-subtitle">
+            整理行銷實戰經驗與最新趨勢，帶你掌握廣告投放、社群經營、品牌規劃等關鍵知識
+          </p>
+        </div>
+      </section>
+
+      <!-- 文章列表 -->
+      <section class="section section--compact-top" aria-label="文章列表">
+        <div class="container">
+          <div class="filter-tabs" data-animate="fade-up" data-delay="0.15" style="margin-top: 2rem">
+            <button type="button" class="filter-tab is-active" data-filter="all">所有知識分享</button>
+            <button type="button" class="filter-tab" data-filter="ad">廣告投放</button>
+            <button type="button" class="filter-tab" data-filter="social">社群經營</button>
+            <button type="button" class="filter-tab" data-filter="brand">品牌規劃</button>
+            <button type="button" class="filter-tab" data-filter="media">媒體曝光</button>
+            <button type="button" class="filter-tab" data-filter="review">五星好評</button>
+            <button type="button" class="filter-tab" data-filter="wom">口碑行銷</button>
+            <button type="button" class="filter-tab" data-filter="web">網站架設</button>
+            <button type="button" class="filter-tab" data-filter="video">影音製作</button>
+          </div>
+
+          <div class="blog-grid">
+            <article class="blog-card" data-category="brand,social" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">四招教你年後如何延續客源</h3>
+                <p class="blog-card__meta">享受編輯部・2024.02.20</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">2024最新！FB、IG圖文尺寸懶人包</h3>
+                <p class="blog-card__meta">享受編輯部・2024.02.07</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">數位行銷已成為主流趨勢，5大優勢你一定要知道</h3>
+                <p class="blog-card__meta">享受編輯部・2024.01.25</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="wom,ad" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">口碑行銷</span><span class="blog-card__tag">廣告投放</span></div>
+                <h3 class="blog-card__title">整合行銷：你必須學會的三種管道</h3>
+                <p class="blog-card__meta">享受編輯部・2024.01.12</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="brand,ad,social" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">激發顧客購買的文案技巧的4大招</h3>
+                <p class="blog-card__meta">享受編輯部・2023.12.30</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="brand,social" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">2024 Q1行銷人行事曆</h3>
+                <p class="blog-card__meta">享受編輯部・2023.12.17</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">5步驟幫助你打造鉤引點，「鉤住」目標客群</h3>
+                <p class="blog-card__meta">享受編輯部・2023.12.04</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="brand,web" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">網站架設</span></div>
+                <h3 class="blog-card__title">三分鐘教你如何提升轉換率</h3>
+                <p class="blog-card__meta">享受編輯部・2023.11.21</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="brand,ad,social" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">FB廣告全新開放！用廣告壯大你的社團吧</h3>
+                <p class="blog-card__meta">享受編輯部・2023.11.08</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="brand,web" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">網站架設</span></div>
+                <h3 class="blog-card__title">我適合用一頁式商店嗎？利弊分析大解</h3>
+                <p class="blog-card__meta">享受編輯部・2023.10.26</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">電商盲跟雙11、購物節有用嗎</h3>
+                <p class="blog-card__meta">享受編輯部・2023.10.13</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">META詐騙猖獗 你也中招了嗎</h3>
+                <p class="blog-card__meta">享受編輯部・2023.09.30</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="media,ad,social" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">媒體曝光</span><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">TikTok在台灣也開放廣告投放啦</h3>
+                <p class="blog-card__meta">享受編輯部・2023.09.17</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span></div>
+                <h3 class="blog-card__title">廣告投手如何持續精進自己</h3>
+                <p class="blog-card__meta">享受編輯部・2023.09.04</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">人人都在用的表情符號是怎麼超進化的</h3>
+                <p class="blog-card__meta">享受編輯部・2023.08.22</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">粉專買粉絲真的有用嗎</h3>
+                <p class="blog-card__meta">享受編輯部・2023.08.09</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">2023第四季電商活動規劃</h3>
+                <p class="blog-card__meta">享受編輯部・2023.07.27</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">快速開通FB雙重驗證</h3>
+                <p class="blog-card__meta">享受編輯部・2023.07.14</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="wom,social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">口碑行銷</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">掌握口碑行銷，兩大策略必做</h3>
+                <p class="blog-card__meta">享受編輯部・2023.07.01</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span></div>
+                <h3 class="blog-card__title">FB廣告投放怕爆預算嗎</h3>
+                <p class="blog-card__meta">享受編輯部・2023.06.18</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span></div>
+                <h3 class="blog-card__title">Facebook常用廣告版位介紹</h3>
+                <p class="blog-card__meta">享受編輯部・2023.06.05</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span></div>
+                <h3 class="blog-card__title">5分鐘看懂Google廣告評級</h3>
+                <p class="blog-card__meta">享受編輯部・2023.05.23</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">開通企業管理平台權限，一次就上手</h3>
+                <p class="blog-card__meta">享受編輯部・2023.05.10</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">2023最新 FB、IG 圖片尺寸大補帖</h3>
+                <p class="blog-card__meta">享受編輯部・2023.04.27</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span></div>
+                <h3 class="blog-card__title">新手投廣告前，該知道的6大重點</h3>
+                <p class="blog-card__meta">享受編輯部・2023.04.14</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">打動人心的文案，四大技巧大公開</h3>
+                <p class="blog-card__meta">享受編輯部・2023.04.01</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">Instagram個人主頁可以放多個連結啦</h3>
+                <p class="blog-card__meta">享受編輯部・2023.03.19</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">FB粉專CTA按鈕強勢更新囉</h3>
+                <p class="blog-card__meta">享受編輯部・2023.03.06</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span></div>
+                <h3 class="blog-card__title">臉書像素安裝教學，電商必備</h3>
+                <p class="blog-card__meta">享受編輯部・2023.02.21</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">藍勾勾以後要收費了 全新Meta Verified情報公開</h3>
+                <p class="blog-card__meta">享受編輯部・2023.02.08</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">2023最新Meta臉書粉專管理員新增方式</h3>
+                <p class="blog-card__meta">享受編輯部・2023.01.26</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">為什麼不要用「加強推廣」投廣告</h3>
+                <p class="blog-card__meta">享受編輯部・2023.01.13</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">讓粉專成為你的自動客服</h3>
+                <p class="blog-card__meta">享受編輯部・2022.12.31</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">借勢行銷：如何跟風跟的漂亮</h3>
+                <p class="blog-card__meta">享受編輯部・2022.12.18</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">臉書(Meta)粉絲專頁角色介紹</h3>
+                <p class="blog-card__meta">享受編輯部・2022.12.05</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">新增臉書(Meta)管理員一次就上手</h3>
+                <p class="blog-card__meta">享受編輯部・2022.11.22</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="ad,social" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">2022最新！教你破解讓ㄗㄎㄅ追蹤你的臉書秘密興趣小標籤</h3>
+                <p class="blog-card__meta">享受編輯部・2022.11.09</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="social" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">FB banner 貼文圖片尺寸大補帖</h3>
+                <p class="blog-card__meta">享受編輯部・2022.10.27</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="brand,ad,social" data-animate="scale-up" data-delay="0.1">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">社群經營</span></div>
+                <h3 class="blog-card__title">讓Google多賺一倍的顏色理論</h3>
+                <p class="blog-card__meta">享受編輯部・2022.10.14</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="wom,brand,video,social,web" data-animate="scale-up" data-delay="0.15">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">口碑行銷</span><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">影音製作</span><span class="blog-card__tag">社群經營</span><span class="blog-card__tag">網站架設</span></div>
+                <h3 class="blog-card__title">2022年網路時代當道搞懂【5T策略行銷】</h3>
+                <p class="blog-card__meta">享受編輯部・2022.10.01</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="review,wom,brand,ad,video,web" data-animate="scale-up" data-delay="0.0">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">五星好評</span><span class="blog-card__tag">口碑行銷</span><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">廣告投放</span><span class="blog-card__tag">影音製作</span><span class="blog-card__tag">網站架設</span></div>
+                <h3 class="blog-card__title">3個版面設計小技巧，讓你廣告成效 Up Up</h3>
+                <p class="blog-card__meta">享受編輯部・2022.09.18</p>
+              </div>
+            </article>
+            <article class="blog-card" data-category="brand,media,video,social,web" data-animate="scale-up" data-delay="0.05">
+              <div class="blog-card__image"></div>
+              <div class="blog-card__body">
+                <div class="blog-card__tags"><span class="blog-card__tag">品牌規劃</span><span class="blog-card__tag">媒體曝光</span><span class="blog-card__tag">影音製作</span><span class="blog-card__tag">社群經營</span><span class="blog-card__tag">網站架設</span></div>
+                <h3 class="blog-card__title">消費者購物型態「 AIDMA法則 」</h3>
+                <p class="blog-card__meta">享受編輯部・2022.09.05</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-divider" data-animate="line-x" data-delay="0.3"></div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section section--compact-top bg-gradient-section" aria-labelledby="cta-title">
+        <div class="container" style="max-width: 48rem; text-align: center">
+          <h2 id="cta-title" class="section-title" data-animate="fade-up" style="margin-bottom: 2.5rem">
+            有行銷方面的需求？<br />讓我們<span class="gold">助你一臂之力</span>吧！
+          </h2>
+          <div class="btn-center" style="margin-top: 0" data-animate="fade-up" data-delay="0.2">
+            <a href="contact.html" class="btn-gold"><span>立即聯絡我們</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container" data-animate="fade-in">
+        <img src="src/imports/logo.png" alt="Logo" />
+        <p>© 2026 All rights reserved. | 享受創意整合行銷</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

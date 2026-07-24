@@ -21,6 +21,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
+        services: path.resolve(__dirname, 'services.html'),
+        about: path.resolve(__dirname, 'about.html'),
+        clients: path.resolve(__dirname, 'clients.html'),
+        blog: path.resolve(__dirname, 'blog.html'),
+        portfolio: path.resolve(__dirname, 'portfolio.html'),
+        contact: path.resolve(__dirname, 'contact.html'),
         react: path.resolve(__dirname, 'react-index.html'),
       },
     },

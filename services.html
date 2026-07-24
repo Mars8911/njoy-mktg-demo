@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>服務項目 — 享受創意整合行銷</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <!-- 導覽 -->
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="src/imports/logo.png" alt="享受創意整合行銷 Logo" />
+          </a>
+        </div>
+        <nav class="nav-links nav-menu-desktop" aria-label="主要導覽">
+          <a href="index.html">首頁</a>
+          <a href="services.html" class="is-active">服務項目</a>
+          <a href="about.html">關於我們</a>
+          <a href="clients.html">合作品牌</a>
+          <a href="portfolio.html">案例分享</a>
+          <a href="blog.html">知識分享</a>
+          <a href="contact.html">聯絡我們</a>
+        </nav>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="開啟選單"
+        >
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+          <svg id="icon-close" hidden xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="手機選單">
+        <div class="mobile-menu-inner">
+          <a href="index.html">首頁</a>
+          <a href="services.html" class="is-active">服務項目</a>
+          <a href="about.html">關於我們</a>
+          <a href="clients.html">合作品牌</a>
+          <a href="portfolio.html">案例分享</a>
+          <a href="blog.html">知識分享</a>
+          <a href="contact.html">聯絡我們</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero" aria-label="服務項目主視覺">
+        <div class="hero-bg">
+          <img src="src/imports/1-電腦1600x640-01-300x120.jpg" alt="" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
+        <div class="page-hero-content">
+          <p class="breadcrumb"><a href="index.html">‹ 返回首頁</a></p>
+          <h1 class="page-hero-title">
+            服務<span class="gold">項目</span>
+          </h1>
+          <p class="page-hero-subtitle">
+            六大整合行銷服務，滿足品牌從曝光、經營到轉換的每一步
+          </p>
+        </div>
+      </section>
+
+      <!-- 服務細項 -->
+      <section id="services" class="section section--compact-top">
+        <div class="container">
+
+          <article class="service-row" data-animate="fade-left" data-delay="0.1">
+            <div class="service-visual">
+              <img src="src/imports/廣告投放.png" alt="廣告投放" />
+              <span class="service-badge">01</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.3">廣告投放</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.5"></div>
+              <p data-animate="fade-up" data-delay="0.4">
+                從受眾洞察到素材優化，我們協助品牌在 Meta、Google、TikTok 等平台精準觸及目標客群，用數據驅動每一次投放決策。
+              </p>
+              <ul class="service-features" data-animate="fade-up" data-delay="0.5">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>受眾輪廓與素材 A/B 測試</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>跨平台廣告帳戶管理</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>轉換追蹤與成效優化</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>每週成效報告與策略調整</li>
+              </ul>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" data-animate="fade-right" data-delay="0.2">
+            <div class="service-visual">
+              <img src="src/imports/社群.png" alt="社群經營" />
+              <span class="service-badge">02</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.4">社群經營</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.6"></div>
+              <p data-animate="fade-up" data-delay="0.5">
+                打造有溫度的品牌社群，透過內容規劃與互動經營，累積忠實粉絲並帶動口碑擴散。
+              </p>
+              <ul class="service-features" data-animate="fade-up" data-delay="0.6">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>內容策略與月曆規劃</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>圖文／短影音貼文製作</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>社群互動與客服回覆</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>輿情監測與危機處理</li>
+              </ul>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row" data-animate="fade-left" data-delay="0.3">
+            <div class="service-visual">
+              <img src="src/imports/品牌企業識別.png" alt="品牌企業識別" />
+              <span class="service-badge">03</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.5">品牌企業識別</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.7"></div>
+              <p data-animate="fade-up" data-delay="0.6">
+                從 Logo、色彩到視覺語言，建立一致且具辨識度的品牌形象，讓品牌在市場中被記住。
+              </p>
+              <ul class="service-features" data-animate="fade-up" data-delay="0.7">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>品牌定位與策略梳理</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Logo 與 CIS 視覺系統設計</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>品牌應用物設計（名片／官網／包裝）</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>品牌識別指南手冊</li>
+              </ul>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" data-animate="fade-right" data-delay="0.4">
+            <div class="service-visual">
+              <img src="src/imports/短影音-1.png" alt="短影音" />
+              <span class="service-badge">04</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.6">短影音</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.8"></div>
+              <p data-animate="fade-up" data-delay="0.7">
+                掌握短影音紅利，從腳本發想到剪輯後製，打造高完播率、高互動的爆款內容。
+              </p>
+              <ul class="service-features" data-animate="fade-up" data-delay="0.8">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>腳本企劃與拍攝執行</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>TikTok／Reels／Shorts 多平台優化</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>字幕與動態特效後製</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>成效分析與內容迭代優化</li>
+              </ul>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row" data-animate="fade-left" data-delay="0.5">
+            <div class="service-visual">
+              <img src="src/imports/口碑行銷.png" alt="口碑行銷" />
+              <span class="service-badge">05</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.7">口碑行銷</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="0.9"></div>
+              <p data-animate="fade-up" data-delay="0.8">
+                結合 KOL／KOC 合作與真實用戶評價，建立品牌信任感，讓消費者主動為品牌發聲。
+              </p>
+              <ul class="service-features" data-animate="fade-up" data-delay="0.9">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>KOL／KOC 名單篩選與合作</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>業配內容規劃與審核</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>評價／開箱文操作</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>口碑聲量追蹤</li>
+              </ul>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" data-animate="fade-right" data-delay="0.6">
+            <div class="service-visual">
+              <img src="src/imports/銷售頁-1.png" alt="銷售頁" />
+              <span class="service-badge">06</span>
+              <span class="service-dot-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="service-text">
+              <h3 data-animate="fade-up" data-delay="0.8">銷售頁</h3>
+              <div class="service-line" data-animate="fade-in" data-delay="1"></div>
+              <p data-animate="fade-up" data-delay="0.9">
+                用文案與視覺設計引導消費者完成購買決策，打造高轉換率的銷售頁與活動頁。
+              </p>
+              <ul class="service-features" data-animate="fade-up" data-delay="1">
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>銷售文案撰寫</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>視覺化頁面設計</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>轉換路徑與 CTA 優化</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>A/B 測試與數據分析</li>
+              </ul>
+              <div class="pulse-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section section--compact-top bg-gradient-section" aria-labelledby="cta-title">
+        <div class="container" style="max-width: 48rem; text-align: center">
+          <h2 id="cta-title" class="section-title" data-animate="fade-up" style="margin-bottom: 2.5rem">
+            有行銷方面的需求？<br />讓我們<span class="gold">助你一臂之力</span>吧！
+          </h2>
+          <div class="btn-center" style="margin-top: 0" data-animate="fade-up" data-delay="0.2">
+            <a href="contact.html" class="btn-gold"><span>立即聯絡我們</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container" data-animate="fade-in">
+        <img src="src/imports/logo.png" alt="Logo" />
+        <p>© 2026 All rights reserved. | 享受創意整合行銷</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

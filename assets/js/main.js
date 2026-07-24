@@ -1,6 +1,16 @@
 (function () {
   'use strict';
 
+  /* ── 避免瀏覽器記住上次捲動位置，導致頁面一開頭主視覺被捲過去 ── */
+  function resetScrollPosition() {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }
+
   /* ── 星星背景 ── */
   function initStars() {
     const container = document.getElementById('stars');
@@ -202,6 +212,27 @@
     resetAutoplay();
   }
 
+  /* ── 知識分享：分類篩選 ── */
+  function initBlogFilter() {
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.blog-card');
+    if (!tabs.length || !cards.length) return;
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+
+        const filter = tab.dataset.filter;
+        cards.forEach((card) => {
+          const cats = (card.dataset.category || '').split(',');
+          const show = filter === 'all' || cats.includes(filter);
+          card.classList.toggle('is-hidden', !show);
+        });
+      });
+    });
+  }
+
   /* ── 表單送出 ── */
   function initForm() {
     const form = document.getElementById('contact-form');
@@ -212,11 +243,13 @@
     });
   }
 
+  resetScrollPosition();
   initStars();
   initParallax();
   initScrollAnimations();
   initMobileMenu();
   initSmoothScroll();
   initPartnerSlider();
+  initBlogFilter();
   initForm();
 })();
